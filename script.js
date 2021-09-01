@@ -116,6 +116,24 @@ function addNewBook(e){
     status = 'Not Read';
   }
 
+  if (pagesTotal < 1)
+  {
+    alert('Must add the total pages');
+    return;
+  }
+
+  if( authorName == '')
+  {
+    alert('Author Name cannot be empty');
+    return;
+  }
+
+  if( bookTitle == '')
+  {
+    alert('Book Title cannot be empty');
+    return;
+  }
+
   const newObj = new Book(bookTitle, authorName, pagesTotal, status);
   createTile(newObj);
   closeForm();
