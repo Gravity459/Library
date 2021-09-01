@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar">
+        <button id="newbook">+ New Book</button>
+    </div>
+
+    <div class="main">
+        <div class="tile-portion">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="modal-content">
+            <div>
+                <span class="close-btn">+</span>
+            </div>
+            <h1>New Book Form</h1>
+            <div class="form-elements">
+                <div class="form-inputs">
+                    <form id="form-content" action="#">
+                        <label for="bookName">Title:
+                            <input type="text" id="bookName" required>
+                        </label>
+
+                        <label for="authorName">Author:
+                            <input type="text" id="authorName" required>
+                        </label>
+
+                        <label for="pagesTotal">Total Pages: 
+                            <input type="number" id="pagesTotal" required>
+                        </label>
+                        
+                    </form>
+                </div>
+                <div class="read-book">
+                    <label for="statusBook">Have you read it?
+                        <input id="statusBook" type="checkbox" name="read-status" 
+                        required> 
+                    </label>
+                </div> 
+                <div class="form-submit">
+                    <button id="submit-btn" type="submit" class="form-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
